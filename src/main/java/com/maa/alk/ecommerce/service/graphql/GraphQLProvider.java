@@ -27,7 +27,7 @@ public class GraphQLProvider {
     private final OrderService orderService;
     private final UserService userService;
 
-    @Value("**/*.graphql")
+    @Value("classpath:graphql/schemas.graphql")
     private Resource resource;
 
     @Getter
